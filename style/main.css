@@ -1,19 +1,52 @@
+/* default */
 body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header, footer, main, nav{width:100%; box-sizing:border-box;}
+footer{
+    position: fixed;
+    bottom: 0px;
+    box-shadow: 0px -10px 10px rgb(187, 187, 187);
+    border-radius: 30px 30px 0px 0px;
+}
+
+ul{
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+li{
+    display: inline;
+}
+
+/* class stlyes */
+.smallCards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: start;
+}
+
+.cards{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-header 
-nav 
-ul, 
-footer 
-nav 
-ul {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+
+/* phone style */
+@media only screen and (min-width: 360px){
+    header ul{ display: none;}
 }
