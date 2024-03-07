@@ -46,7 +46,6 @@ footer{
     position: fixed;
     bottom: 0px;
     box-shadow: 0px -10px 10px var(--shadow);
-    border-radius: 30px 30px 0px 0px;
     background-color: white;
     z-index: 5;
 }
@@ -124,6 +123,7 @@ input{width: 100%;}
 }
 
 .smallCards div{
+    width: 25%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -142,9 +142,9 @@ input{width: 100%;}
 
 .redCard{background-color: var(--bloodRed);}
 
-.redCard div h3{color: white;}
+.redCard h3{color: white;}
 
-.redCard div svg path{color: white;}
+.redCard svg path{color: white;}
 
 
 
@@ -167,7 +167,7 @@ input{width: 100%;}
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
     padding: 0;
 }
 
@@ -183,9 +183,11 @@ input{width: 100%;}
 
 .bcBg{
     width: 90%;
+    height: 130px;
     background-color: var(--bloodRed);
     display: flex;
     justify-content: center;
+    align-items: end;
     border-radius: 10px;
 }
 
