@@ -34,10 +34,10 @@
 }
 
 .favFood div{
-    gap: 30px;
+    gap: 10px;
 }
 .favFood p{
-    width: 70%;
+    width: 80%;
     text-align: center;
     word-spacing: 0.1rem;
     line-height: 1.5rem;
@@ -96,6 +96,43 @@
     font-weight: 800;
 }
 
+.amount .less{
+    text-align: center;
+    font-size: 2rem;
+}
+
 .amount .number{
     background-color: white;
+}
+
+.favFooter{
+    box-shadow: none;
+    padding: 20px;
+}
+
+.favFooter > div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.favFooter div div{
+    padding-left: 10px;
+}
+
+.favFooter div div p{
+    color: var(--midGray);
+}
+
+.favFooter div div h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.favFooter div h2{
+    padding: 10px;
+    color: white;
+    background-color: var(--bloodRed);
+    border-radius: 10px 0px 0px 10px;
 }
