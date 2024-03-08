@@ -43,6 +43,7 @@ header{
     position: sticky;
     top: 0;
 }
+header ul{ display: none;}
 footer{
     position: fixed;
     bottom: 0px;
@@ -65,6 +66,12 @@ footer nav ul li{
 footer a{
     text-decoration: none;
     color: var(--midGray);
+}
+
+footer > p{
+    color: var(--midGray);
+    margin: 5px;
+    font-size: 8px;
 }
 
 ul{
@@ -222,7 +229,3 @@ input{width: 100%;}
     z-index: 6;
 }
 
-/* phone style */
-@media only screen and (min-width: 360px){
-    header ul{ display: none;}
-}
