@@ -1,4 +1,36 @@
 /* default */
+/* preloader */
+@keyframes preBurger {
+    0%{transform: scale(0) rotate(180deg);}
+    30%{transform: scale(1) rotate(90deg);}
+    50%{transform: scale(1.5) rotate(0deg);}
+    70%{transform: scale(1) rotate(-90deg);}
+    100%{transform: scale(0) rotate(-180deg);}
+}
+
+@keyframes preBg {
+    0%{opacity: 0; display: none;}
+    10%{opacity: 1; display: flex;}
+    90%{opacity: 1; display: flex;}
+    100%{opacity: 0; display: none;}
+}
+
+.preloader{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bloodRed);
+    animation: preBg 1.5s forwards;
+    position: fixed;
+    top: 0;
+    z-index: 6;
+}
+
+.preloader > img{
+    animation: preBurger 1.5s forwards ease;
+}
 /* color */
 :root{
     --shadow: rgb(187, 187, 187);
@@ -44,6 +76,7 @@ header{
     top: 0;
 }
 header ul{ display: none;}
+header > div > img:hover{cursor: pointer;}
 footer{
     position: fixed;
     bottom: 0px;
@@ -130,6 +163,18 @@ input{width: 100%;}
     padding: 0;
 }
 
+.smallCards > div{
+    transition: 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.smallCards > div:hover{
+    cursor: pointer;
+    background-color: var(--pinkRed);
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px var(--midGray);
+    transform: translateY(-5px);
+}
+
 .smallCards div{
     width: 25%;
     display: flex;
@@ -167,7 +212,7 @@ input{width: 100%;}
     margin-bottom: 30px;
 }
 
-.popular a{color: var(--bloodRed);}
+.popular a{ text-decoration:none; color: var(--bloodRed);}
 
 .bigCards{
     width: 100%;

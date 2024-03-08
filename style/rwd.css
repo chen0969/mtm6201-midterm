@@ -1,5 +1,8 @@
 /* phone style */
 @media only screen and (min-width: 720px){
+    body{
+        overflow-x: hidden;
+    }
     header{
         display: flex;
         flex-direction: row;
@@ -36,6 +39,23 @@
         font-weight: 900;
     }
     header div svg{display: none;}
+
+    /* main */
+    @keyframes showCards {
+        from{width: 0vw; visibility: hidden;}
+        to{width: 80vw; visibility: visible;}
+    }
+    .bigCards{
+        visibility: hidden;
+        width: 80vw;
+        height: 60VH;
+        overflow-x: scroll;
+        flex-direction: row;
+        gap: 30px;
+        border-left: solid 10px var(--bloodRed);
+        border-right: solid 10px var(--bloodRed);
+        animation: showCards 1s 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
 
     /* footer */
     footer{
