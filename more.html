@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>More</title>
+    <link rel="icon" type="image/x-icon" href="media/smallBurger.png">
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="style/sub-nav.css">
+    <link rel="stylesheet" type="text/css" href="style/rwd.css">
 </head>
 <body>
     <button id="skip">skip</button>
@@ -21,17 +23,24 @@
     </header>
     <main class="morePage">
         <h1>Rate your service</h1>
-        <h2>How was your <em>food?</em></h2>
         <div>
-            <div><img src="media/thumbsDown.png" alt="thumbsDown"></div>
-            <div class="item"><img src="media/bigBurger.png" alt="bigBurger"></div>
-            <div><img src="media/thumbsUp.png" alt="thumbsUp"></div>
+            <h2>How was your <em>food?</em></h2>
+            <div>
+                <div onclick="alert('OH NO you do not like it!')"><img src="media/thumbsDown.png" alt="thumbsDown"></div>
+                <div class="item"><img src="media/bigBurger.png" alt="bigBurger"></div>
+                <div onclick="alert('OH YES you like it!')"><img src="media/thumbsUp.png" alt="thumbsUp"></div>
+            </div>
         </div>
-        <h2>How was your <em>delivery?</em></h2>
+        <div class="divideLine">
+            &nbsp;
+        </div>
         <div>
-            <div><img src="media/thumbsDown.png" alt="thumbsDown"></div>
-            <div class="itemDeliver"><img src="media/deliver.png" alt="deliver"></div>
-            <div><img src="media/thumbsUp.png" alt="thumbsUp"></div>
+            <h2>How was your <em>delivery?</em></h2>
+            <div>
+                <div onclick="alert('OH NO you do not like him!')"><img src="media/thumbsDown.png" alt="thumbsDown"></div>
+                <div class="itemDeliver"><img src="media/deliver.png" alt="deliver"></div>
+                <div onclick="alert('OH YES you like him!')"><img src="media/thumbsUp.png" alt="thumbsUp"></div>
+            </div>
         </div>
     </main>
     <footer>

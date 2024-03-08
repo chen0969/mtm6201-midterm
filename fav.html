@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Favorites</title>
+    <link rel="icon" type="image/x-icon" href="media/smallBurger.png">
     <link rel="stylesheet" type="text/css" href="style/main.css">
     <link rel="stylesheet" type="text/css" href="style/sub-nav.css">
 </head>
@@ -39,21 +40,21 @@
                     <p>A signature flame-grilled chicken patty topped with smoked beef</p>
                 </div>
                 <div class="roundDiv">
-                    <img src="media/hugeBurger.png" alt="hugeBurger">
+                    <img id="burgerPic" src="media/hugeBurger.png" alt="hugeBurger">
                 </div>
             </div>
             <div class="sizePick">
-                <h4>S</h4>
-                <h4 class="mSize picked">M</h4>
-                <h4>L</h4>
+                <h4 onclick="pickSize(0)">S</h4>
+                <h4 onclick="pickSize(1)" class="mSize picked">M</h4>
+                <h4 onclick="pickSize(2)">L</h4>
             </div>
             <div class="amount">
-                <svg class="less" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg onclick="amountCount(-1)" class="less" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="#F27D82"/>
                     <path d="M23.7879 18.9V20.44H15.7879V18.9H23.7879Z" fill="black"/>
                 </svg>
-                <h5 class="number">1</h5>
-                <svg class="more" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h5 id="number">1</h5>
+                <svg onclick="amountCount(1)" class="more" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <circle cx="20" cy="20" r="20" fill="#F27D82"/>
                     <path d="M25.0983 20.52H20.8783V24.78H19.0983V20.52H14.8983V18.86H19.0983V14.58H20.8783V18.86H25.0983V20.52Z" fill="black"/>
                 </svg>
@@ -64,11 +65,12 @@
         <div>
             <div>
                 <p>Price</p>
-                <h3>20.95</h3>
+                <h3 id="totalPrice">20.95</h3>
             </div>
-            <h2>Go to cart</h2>
+            <h2 onclick="toAcc()">Go to cart</h2>
         </div>
         <script src="javascript/route.js"></script>
+        <script src="javascript/count.js"></script>
     </footer>
 </body>
 </html>

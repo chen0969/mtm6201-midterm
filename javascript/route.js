@@ -10,3 +10,6 @@ function toAcc(){
     window.location.href = "acc.html";
 }
 
+function toMore(){
+    window.location.href = "more.html";
+}

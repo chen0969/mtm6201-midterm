@@ -57,6 +57,15 @@
         animation: showCards 1s 2s forwards cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
+    /* more page */
+    .moreHeader{
+        display: none;
+    }
+    .morePage .divideLine{
+        border-top: solid 10px white; 
+        width: 80%;
+    }
+
     /* footer */
     footer{
         box-shadow: none;
