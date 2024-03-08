@@ -135,4 +135,168 @@
     color: white;
     background-color: var(--bloodRed);
     border-radius: 10px 0px 0px 10px;
+    justify-items: end;
+}
+
+.favFooter div div h3::before{
+    content: '$';
+}
+
+.favFooter div h2::before{
+    content: url('../media/cart.png');
+    padding-right: 10px;
+}
+
+/* for acc page */
+.subNav h1{
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+}
+
+.cartList{
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cartItem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    box-shadow: 0px 0px 20px var(--shadow);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.cartItem img{
+    width: 25%;
+    height: 25%;
+}
+
+.cartItem > div{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartItem div h2{
+    font-size: 1.1rem;
+}
+
+.cartItem > div > div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.cartItem > div > div > h3::before{
+    content: '$';
+}
+
+.count{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 2px var(--shadow);
+}
+
+.count .less, .count .more{
+    font-size: 1.3rem;
+    color: var(--bloodRed);
+}
+
+/* coupon btn */
+.accPage button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 90%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+}
+
+.accPage button::after{
+    content: url('../media/bi_arrow-right.png');
+}
+
+
+/* bill section */
+.bill{
+    width: 90%;
+    padding: 0;
+}
+
+.bill > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.bill > div > .object{
+    color: var(--midGray);
+}
+
+.bill > div > .number::before{
+    content: '$';
+}
+
+.bill > div > .total, .bill > div > .finPrice{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.bill > div > .finPrice::before{
+    content: '$';
+}
+
+/* footer */
+
+.accFooter{
+    display: flex;
+    justify-content: center;
+    box-shadow: none;
+    border: none;
+}
+
+.accFooter button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 90%;
+    background-color: var(--bloodRed);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
 }
