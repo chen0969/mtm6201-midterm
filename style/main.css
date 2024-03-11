@@ -34,7 +34,7 @@
 /* color */
 :root{
     --shadow: rgb(187, 187, 187);
-    --midGray: #667C8A;
+    --midGray: #404040;
     --bloodRed: #C8161D;
     --pinkRed: #F27D82;
 }
@@ -135,9 +135,17 @@ input{width: 100%;}
 .hey{width: 90%;}
 .hey h1, 
 .hey label,
-.hey form{margin-top: 10px;}
-
 .hey form{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hey form{text-align: start; width: 100%; color: black; height: max-content;}
+
+.hey form label{margin-bottom: 10px;}
+
+.hey form div{
     padding: 10px;
     border: 0;
     border-radius: 10px;
@@ -148,9 +156,11 @@ input{width: 100%;}
     align-items: center;
 }
 
-.hey form{text-align: start; width: 100%; color: black;}
-
-.hey form input{margin: 0; border: none; color: black;}
+.hey form input{
+    margin: 0;
+    border: 0;
+    color: black;
+}
 
 .material-symbols-outlined{transform: scale(0.8);}
 
