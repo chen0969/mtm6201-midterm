@@ -43,7 +43,7 @@
     font-family: "Roboto";
     src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 }
-h1, h2, h3, h4, h5, p, a { 
+h1, h2, h3, h4, h5, p, label, a { 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -134,10 +134,10 @@ input{width: 100%;}
 /* class stlyes */
 .hey{width: 90%;}
 .hey h1, 
-.hey p,
-.hey div{margin-top: 10px;}
+.hey label,
+.hey form{margin-top: 10px;}
 
-.hey div{
+.hey form{
     padding: 10px;
     border: 0;
     border-radius: 10px;
@@ -148,7 +148,9 @@ input{width: 100%;}
     align-items: center;
 }
 
-.hey div input{margin: 0; border: none;}
+.hey form{text-align: start; width: 100%; color: black;}
+
+.hey form input{margin: 0; border: none; color: black;}
 
 .material-symbols-outlined{transform: scale(0.8);}
 
